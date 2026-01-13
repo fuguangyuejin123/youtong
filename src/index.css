@@ -1,0 +1,328 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义样式 */
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent;
+  }
+  
+  .highlight {
+    @apply bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent;
+  }
+
+  /* 深色模式下强制纯白文字，避免半透明蓝色效果 */
+  [data-theme="dark"] .gradient-text,
+  [data-theme="dark"] .highlight,
+  .dark-theme .gradient-text,
+  .dark-theme .highlight {
+    background: none !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    background-clip: border-box !important;
+  }
+  
+  /* 深色模式卡片 */
+  .tech-card {
+    @apply bg-gradient-to-br from-gray-900/90 to-black/90 backdrop-blur-xl border border-gray-700/50 shadow-2xl;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  /* 新增：主题相关工具类，统一管理 */
+  .theme-text {
+    color: var(--text-color);
+  }
+  .theme-text-secondary {
+    color: var(--text-secondary);
+  }
+  .theme-text-muted {
+    color: var(--text-muted);
+  }
+  .theme-card-bg {
+    background-color: var(--card-bg);
+    border-color: var(--card-border);
+  }
+  .theme-section-bg {
+    background-color: var(--section-bg);
+  }
+
+  /* 强制纯白文本（用于少数需要固定白色的文字） */
+  .force-white,
+  .force-white * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+
+  /* 深色模式下固定纯白（浅色模式不变） */
+  [data-theme="dark"] .fixed-white-dark,
+  [data-theme="dark"] .fixed-white-dark *,
+  .dark-theme .fixed-white-dark,
+  .dark-theme .fixed-white-dark * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+}
+
+/* 关键帧动画定义 - 移到layer外确保全局生效 */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  to {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.6), 0 0 40px rgba(147, 51, 234, 0.3);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* 全局样式重置 */
+* {
+  box-sizing: border-box;
+  /* 统一过渡动画，避免重复定义 */
+  transition: 
+    background-color 0.3s ease, 
+    color 0.3s ease, 
+    border-color 0.3s ease, 
+    box-shadow 0.3s ease,
+    opacity 0.3s ease;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh; /* 修复：确保body占满视口高度 */
+}
+
+/* CSS 变量定义 - 基础默认值（浅色主题） */
+:root {
+  /* 文本颜色 */
+  --text-color: #1e293b;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+  
+  /* 背景颜色 */
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --card-border: rgba(148, 163, 184, 0.2);
+  --section-bg: rgba(248, 250, 252, 0.5);
+  
+  /* 表单元素 */
+  --input-bg: #ffffff;
+  --input-border: #cbd5e1;
+  --placeholder-color: #a1acb8;
+  
+  /* 按钮 */
+  --button-bg: #3b82f6;
+  --button-text: #ffffff;
+  
+  /* 统计数字颜色 */
+  --stat-1: #3b82f6;
+  --stat-2: #ec4899;
+  --stat-3: #10b981;
+  --stat-4: #f59e0b;
+  
+  /* 其他元素 */
+  --adv-badge-bg: #3b82f6;
+  --icon-gradient: linear-gradient(135deg, #3b82f6, #8b5cf6);
+}
+
+/* 深色主题 CSS 变量 - 提升优先级，修复!important确保生效 */
+[data-theme="dark"],
+.dark-theme {
+  /* 文本颜色 */
+  --text-color: #ffffff !important;
+  --text-secondary: #cbd5e1 !important;
+  --text-muted: #94a3b8 !important;
+  
+  /* 背景颜色 */
+  --card-bg: rgba(55, 65, 81, 0.9) !important;
+  --card-border: rgba(107, 114, 128, 0.5) !important;
+  --section-bg: rgba(20, 25, 35, 0.7) !important;
+  
+  /* 表单元素 */
+  --input-bg: #374151 !important;
+  --input-border: #4b5563 !important;
+  --placeholder-color: #9ca3af !important;
+  
+  /* 按钮 */
+  --button-bg: #3b82f6 !important;
+  --button-text: #ffffff !important;
+  
+  /* 统计数字颜色 */
+  --stat-1: #60a5fa !important;
+  --stat-2: #f472b6 !important;
+  --stat-3: #34d399 !important;
+  --stat-4: #fbbf24 !important;
+  
+  /* 其他元素 */
+  --adv-badge-bg: #1e40af !important;
+  --icon-gradient: linear-gradient(135deg, #1e40af, #6d28d9) !important;
+  
+  /* 背景渐变 */
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 50%, #1a202c 100%) !important;
+  color: #ffffff !important;
+}
+
+/* 浅色主题样式 - 统一优先级 */
+[data-theme="light"],
+.light-theme {
+  /* 文本颜色 */
+  --text-color: #1e293b !important;
+  --text-secondary: #64748b !important;
+  --text-muted: #94a3b8 !important;
+  
+  /* 背景颜色 */
+  --card-bg: rgba(255, 255, 255, 0.95) !important;
+  --card-border: rgba(148, 163, 184, 0.2) !important;
+  --section-bg: rgba(248, 250, 252, 0.5) !important;
+  
+  /* 表单元素 */
+  --input-bg: #ffffff !important;
+  --input-border: #cbd5e1 !important;
+  --placeholder-color: #a1acb8 !important;
+  
+  /* 按钮 */
+  --button-bg: #3b82f6 !important;
+  --button-text: #ffffff !important;
+  
+  /* 背景渐变 */
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%) !important;
+  color: #1e293b !important;
+}
+
+/* 滚动条样式 - 修复选择器优先级问题 */
+/* 深色模式滚动条 */
+.dark-theme ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark-theme ::-webkit-scrollbar-track {
+  background-color: #1f2937; /* 明确颜色值，避免依赖变量 */
+}
+
+.dark-theme ::-webkit-scrollbar-thumb {
+  @apply bg-gray-600 rounded-full;
+}
+
+.dark-theme ::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+/* 浅色模式滚动条 */
+.light-theme ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.light-theme ::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+
+.light-theme ::-webkit-scrollbar-thumb {
+  @apply bg-slate-400 rounded-full;
+}
+
+.light-theme ::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-500;
+}
+
+/* 日间模式卡片样式 - 修复样式冲突 */
+.light-theme .tech-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 100%) !important;
+  border: 1px solid rgba(148, 163, 184, 0.2) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(0, 0, 0, 0.03) !important;
+  backdrop-filter: blur(10px);
+}
+
+.light-theme .tech-card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 8px 20px rgba(0, 0, 0, 0.05) !important;
+  border-color: rgba(59, 130, 246, 0.3) !important;
+}
+
+/* 深色模式卡片增强效果 - 修复优先级问题 */
+.dark-theme .tech-card,
+[data-theme="dark"] .tech-card {
+  background: linear-gradient(135deg, rgba(55, 65, 81, 0.95) 0%, rgba(45, 55, 72, 0.95) 100%) !important;
+  border: 1px solid rgba(107, 114, 128, 0.5) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(10px);
+}
+
+.dark-theme .tech-card:hover,
+[data-theme="dark"] .tech-card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5) !important;
+  border-color: rgba(59, 130, 246, 0.5) !important;
+}
+
+/* 修复：卡片背景变量应用问题 */
+.dark-theme [class*="theme-card-bg"],
+[data-theme="dark"] [class*="theme-card-bg"] {
+  background-color: var(--card-bg) !important;
+  border-color: var(--card-border) !important;
+}
+
+/* 渐变文字修复 - 兼容不同浏览器 */
+.gradient-text,
+.highlight {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  text-fill-color: transparent !important;
+  /* 降级处理 */
+  color: #3b82f6;
+}
+
+/* 修复：按钮样式选择器过宽导致的冲突 */
+.light-theme button.secondary-btn {
+  background-color: rgba(248, 250, 252, 0.9) !important;
+  border-color: rgba(148, 163, 184, 0.3) !important;
+  color: #475569 !important;
+}
+
+.light-theme button.secondary-btn:hover {
+  background-color: rgba(241, 245, 249, 0.9) !important;
+  border-color: rgba(59, 130, 246, 0.4) !important;
+}
+
+/* 修复：placeholder样式不生效问题 */
+.light-theme ::placeholder {
+  color: var(--placeholder-color) !important;
+  opacity: 1 !important;
+}
+
+.dark-theme ::placeholder {
+  color: var(--placeholder-color) !important;
+  opacity: 1 !important;
+}
+
+/* 新增：暗黑模式下的链接样式 */
+.dark-theme a {
+  color: #60a5fa !important;
+}
+
+.dark-theme a:hover {
+  color: #93c5fd !important;
+}
+
+/* 新增：确保卡片在暗黑模式下的边框显示正常 */
+.dark-theme .border {
+  border-color: var(--card-border) !important;
+}

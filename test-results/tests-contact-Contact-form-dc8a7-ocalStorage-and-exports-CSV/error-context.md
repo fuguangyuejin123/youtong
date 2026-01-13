@@ -1,0 +1,458 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e7]:
+      - link "网站logo 友通科技" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "网站logo" [ref=e9]
+        - generic [ref=e10]: 友通科技
+      - navigation [ref=e11]:
+        - link "首页" [ref=e12] [cursor=pointer]:
+          - /url: /
+        - link "产品方案" [ref=e13] [cursor=pointer]:
+          - /url: /products
+        - link "企业介绍" [ref=e14] [cursor=pointer]:
+          - /url: /about
+        - link "服务保障" [ref=e15] [cursor=pointer]:
+          - /url: /services
+        - link "联系我们" [ref=e16] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e17]:
+        - button "切换到夜间模式" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+        - link "产品演示" [ref=e21] [cursor=pointer]:
+          - /url: /demo
+  - main [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - img [ref=e32]
+            - generic [ref=e34]: 高新技术企业 · 数智化管理专家
+          - heading "企业数智化 管理软件专家" [level=1] [ref=e35]:
+            - text: 企业数智化
+            - text: 管理软件专家
+          - paragraph [ref=e36]: 专注MES制造执行系统、WMS仓储管理系统研发，为制造业企业提供全链条信息化解决方案， 助力企业实现降本增效与数字化转型
+          - generic [ref=e37]:
+            - link "免费咨询方案" [ref=e38] [cursor=pointer]:
+              - /url: /contact
+              - text: 免费咨询方案
+              - img [ref=e39]
+            - link "产品演示" [ref=e41] [cursor=pointer]:
+              - /url: /demo
+          - generic [ref=e42]:
+            - generic [ref=e43]:
+              - img [ref=e45]
+              - heading "定制化解决方案" [level=3] [ref=e47]
+              - paragraph [ref=e48]: 基于企业实际需求定制
+            - generic [ref=e49]:
+              - img [ref=e51]
+              - heading "快速实施部署" [level=3] [ref=e54]
+              - paragraph [ref=e55]: 2-4周完成系统上线
+            - generic [ref=e56]:
+              - img [ref=e58]
+              - heading "专业培训支持" [level=3] [ref=e63]
+              - paragraph [ref=e64]: 全面的用户培训体系
+            - generic [ref=e65]:
+              - img [ref=e67]
+              - heading "7×12技术支持" [level=3] [ref=e69]
+              - paragraph [ref=e70]: 全天候技术服务保障
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - generic [ref=e73]: 16+
+            - generic [ref=e74]: 年技术沉淀
+          - generic [ref=e75]:
+            - generic [ref=e76]: 500+
+            - generic [ref=e77]: 服务企业
+          - generic [ref=e78]:
+            - generic [ref=e79]: 99.9%
+            - generic [ref=e80]: 系统稳定性
+          - generic [ref=e81]:
+            - generic [ref=e82]: 7×12
+            - generic [ref=e83]: 小时技术支持
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - heading "为什么选择友通科技" [level=2] [ref=e87]
+          - paragraph [ref=e88]: 16年专业积淀，500+成功案例，让我们成为您数智化转型的最佳合作伙伴
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - generic [ref=e91]: 权威认证
+            - img [ref=e94]
+            - heading "高新技术企业" [level=3] [ref=e97]
+            - paragraph [ref=e98]: 国家认定的高新技术企业，拥有多项自主知识产权和技术专利
+          - generic [ref=e99]:
+            - generic [ref=e100]: 专业团队
+            - img [ref=e103]
+            - heading "专业团队" [level=3] [ref=e108]
+            - paragraph [ref=e109]: 50+专业技术人员，平均行业经验8年以上，深度理解制造业需求
+          - generic [ref=e110]:
+            - generic [ref=e111]: 稳定可靠
+            - img [ref=e114]
+            - heading "系统稳定可靠" [level=3] [ref=e116]
+            - paragraph [ref=e117]: 99.9%系统稳定性，24小时监控，多重备份保障数据安全
+          - generic [ref=e118]:
+            - generic [ref=e119]: 技术领先
+            - img [ref=e122]
+            - heading "持续创新" [level=3] [ref=e125]
+            - paragraph [ref=e126]: 每年投入20%以上营收用于研发，保持技术领先和产品创新
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - heading "移动端生产管理" [level=2] [ref=e130]
+          - paragraph [ref=e131]: 扫描派工单工序条码，输入数量查看报工进度，随时随地掌控生产状态
+        - generic [ref=e132]:
+          - generic [ref=e133]:
+            - generic [ref=e134]:
+              - img [ref=e136]
+              - generic [ref=e142]:
+                - heading "扫码派工" [level=3] [ref=e143]
+                - paragraph [ref=e144]: 通过扫描二维码快速获取派工单信息，实现无纸化作业流程，提升工作效率
+            - generic [ref=e145]:
+              - img [ref=e147]
+              - generic [ref=e149]:
+                - heading "移动报工" [level=3] [ref=e150]
+                - paragraph [ref=e151]: 实时输入生产数量，查看工序进度，支持异常情况快速上报和处理
+            - generic [ref=e152]:
+              - img [ref=e154]
+              - generic [ref=e156]:
+                - heading "实时统计" [level=3] [ref=e157]
+                - paragraph [ref=e158]: 生产数据实时同步，自动生成统计报表，为管理决策提供数据支撑
+            - link "立刻体验演示" [ref=e160] [cursor=pointer]:
+              - /url: /demo
+              - text: 立刻体验演示
+              - img [ref=e161]
+          - generic [ref=e164]:
+            - generic [ref=e165]:
+              - generic [ref=e166]:
+                - generic [ref=e167]:
+                  - generic [ref=e168]: 派工单
+                  - generic [ref=e169]: 2026-3-15 至 2026-3-22
+                - generic [ref=e170]: SW-202603
+              - generic [ref=e171]:
+                - generic [ref=e172]:
+                  - generic [ref=e173]: 半成品类1/包装加工
+                  - generic [ref=e174]:
+                    - generic [ref=e175]: "工序编号: SW-202603-1"
+                    - generic [ref=e176]: "数量: 100"
+                - generic [ref=e177]:
+                  - generic [ref=e178]: 半成品类1/组装
+                  - generic [ref=e179]:
+                    - generic [ref=e180]: "工序编号: SW-202603-2"
+                    - generic [ref=e181]: "数量: 100"
+                - generic [ref=e182]:
+                  - generic [ref=e183]: 半成品类1/检测
+                  - generic [ref=e184]:
+                    - generic [ref=e185]: "工序编号: SW-202603-3"
+                    - generic [ref=e186]: "数量: 100"
+              - generic [ref=e188]: "总单数: 5"
+            - generic [ref=e189]:
+              - generic [ref=e190]: 派工单详情
+              - generic [ref=e191]:
+                - generic [ref=e192]:
+                  - generic [ref=e193]: "单据日期:"
+                  - generic [ref=e194]: 2026-03-15
+                - generic [ref=e195]:
+                  - generic [ref=e196]: "工厂号:"
+                  - generic [ref=e197]: SW-202603
+                - generic [ref=e198]:
+                  - generic [ref=e199]: "生产订单:"
+                  - generic [ref=e200]: "0000000001"
+                - generic [ref=e201]:
+                  - generic [ref=e202]: "工序:"
+                  - generic [ref=e203]: 自制
+              - generic [ref=e204]:
+                - generic [ref=e205]: 存货编码
+                - generic [ref=e206]: bcp10001
+              - generic [ref=e207]:
+                - button "确认" [ref=e208] [cursor=pointer]
+                - button "开工" [ref=e209] [cursor=pointer]
+            - generic [ref=e210]:
+              - generic [ref=e211]: 生产统计
+              - generic [ref=e212]:
+                - generic [ref=e213]:
+                  - generic [ref=e214]: "总单数:"
+                  - generic [ref=e215]: "3"
+                - generic [ref=e216]:
+                  - generic [ref=e217]: "自制:"
+                  - generic [ref=e218]: "25365"
+                - generic [ref=e219]:
+                  - generic [ref=e220]: "委外:"
+                  - generic [ref=e221]: "0"
+                - generic [ref=e222]:
+                  - generic [ref=e223]: "金额:"
+                  - generic [ref=e224]: "0"
+              - generic [ref=e226]: "总单数: 2"
+            - generic [ref=e227]:
+              - generic [ref=e228]: 生产进度
+              - generic [ref=e229]:
+                - generic [ref=e230]:
+                  - generic [ref=e231]: 42.4%
+                  - generic [ref=e232]: 加工
+                - generic [ref=e233]:
+                  - generic [ref=e234]: 66.9%
+                  - generic [ref=e235]: 组装
+                - generic [ref=e236]:
+                  - generic [ref=e237]: 25.2%
+                  - generic [ref=e238]: 测试
+              - generic [ref=e239]:
+                - generic [ref=e240]:
+                  - generic [ref=e242]: "0"
+                  - generic [ref=e243]: 组装
+                - generic [ref=e244]:
+                  - generic [ref=e246]: "0"
+                  - generic [ref=e247]: 振动
+                - generic [ref=e248]:
+                  - generic [ref=e250]: "0"
+                  - generic [ref=e251]: 完成
+                - generic [ref=e252]:
+                  - generic [ref=e254]: "0"
+                  - generic [ref=e255]: 包装测试
+      - generic [ref=e259]:
+        - generic [ref=e260]:
+          - heading "核心解决方案" [level=2] [ref=e261]
+          - paragraph [ref=e262]: 深耕制造业十余年，打造覆盖生产、仓储、协同的全链条信息化解决方案
+        - generic [ref=e263]:
+          - generic [ref=e264]:
+            - generic [ref=e265]:
+              - img [ref=e267]
+              - heading "MES制造执行系统" [level=3] [ref=e269]
+            - paragraph [ref=e270]: 精确追溯体系，车间报工追溯过程，仓库出入库追溯，看板与追溯报表
+            - generic [ref=e271]:
+              - generic [ref=e272]: 生产计划管控
+              - generic [ref=e274]: 质量追溯体系
+              - generic [ref=e276]: 设备管理联机
+              - generic [ref=e278]: 实时数据采集
+            - link "了解详情" [ref=e280] [cursor=pointer]:
+              - /url: /products
+              - text: 了解详情
+              - img [ref=e281]
+          - generic [ref=e283]:
+            - generic [ref=e284]:
+              - img [ref=e286]
+              - heading "WMS仓储管理系统" [level=3] [ref=e289]
+            - paragraph [ref=e290]: 供应商协同平台，设备管理与数采联机，全过程精确追溯
+            - generic [ref=e291]:
+              - generic [ref=e292]: 智能库存管理
+              - generic [ref=e294]: 自动化作业流程
+              - generic [ref=e296]: 多仓协同管理
+              - generic [ref=e298]: 数据实时同步
+            - link "了解详情" [ref=e300] [cursor=pointer]:
+              - /url: /products
+              - text: 了解详情
+              - img [ref=e301]
+      - generic [ref=e304]:
+        - generic [ref=e305]:
+          - heading "成功案例" [level=2] [ref=e306]
+          - paragraph [ref=e307]: 真实案例见证，数字说话，看看我们如何帮助企业实现数智化转型
+        - generic [ref=e308]:
+          - generic [ref=e309]:
+            - generic [ref=e310]:
+              - generic [ref=e311]:
+                - heading "金洲制造" [level=3] [ref=e312]
+                - generic [ref=e313]: 实施效果
+              - paragraph [ref=e314]: 通过优化排产与实施MES系统，生产效率提升显著，交付周期缩短。
+            - generic [ref=e315]: "实施效果: 产能提升 30%"
+          - generic [ref=e316]:
+            - generic [ref=e317]:
+              - generic [ref=e318]:
+                - heading "唯尔得塑业" [level=3] [ref=e319]
+                - generic [ref=e320]: 实施效果
+              - paragraph [ref=e321]: 仓储管理流程重构，库存周转提升，库存占用降低。
+            - generic [ref=e322]: "实施效果: 库存周转提升 25%"
+          - generic [ref=e323]:
+            - generic [ref=e324]:
+              - generic [ref=e325]:
+                - heading "Levi's" [level=3] [ref=e326]
+                - generic [ref=e327]: 实施效果
+              - paragraph [ref=e328]: 实现产品批次追溯，减少不良返工与投诉。
+            - generic [ref=e329]: "实施效果: 不良率下降 18%"
+      - generic [ref=e331]:
+        - generic [ref=e332]:
+          - heading "客户评价" [level=2] [ref=e333]
+          - paragraph [ref=e334]: 听听客户怎么说，真实的声音最有说服力
+        - generic [ref=e336]:
+          - generic [ref=e337]:
+            - generic [ref=e338]:
+              - img [ref=e340]
+              - blockquote [ref=e342]: "\"友通的系统让我们生产效率和可视化大幅提升，交付周期明显缩短。\""
+            - generic [ref=e344]: 张经理 · 金洲
+          - generic [ref=e345]:
+            - button [ref=e346] [cursor=pointer]:
+              - img [ref=e347]
+            - button [ref=e349] [cursor=pointer]:
+              - img [ref=e350]
+      - generic [ref=e353]:
+        - generic [ref=e354]:
+          - heading "新闻动态" [level=2] [ref=e355]
+          - paragraph [ref=e356]: 了解友通科技最新动态和行业资讯
+        - generic [ref=e357]:
+          - article [ref=e358]:
+            - generic [ref=e359]:
+              - generic [ref=e360]: 公告
+              - generic [ref=e361]: 2024-12-01
+            - heading "发布 2.1 版本，支持更多设备" [level=3] [ref=e362]
+            - paragraph [ref=e363]: 本次更新引入了更完善的报表和移动端优化
+            - generic [ref=e364]:
+              - generic [ref=e365]: 阅读更多
+              - img [ref=e366]
+          - article [ref=e368]:
+            - generic [ref=e369]:
+              - generic [ref=e370]: 行业
+              - generic [ref=e371]: 2024-11-10
+            - heading "参加智能制造展会" [level=3] [ref=e372]
+            - paragraph [ref=e373]: 在展会上展示了我们的MES+WMS一体化解决方案
+            - generic [ref=e374]:
+              - generic [ref=e375]: 阅读更多
+              - img [ref=e376]
+          - article [ref=e378]:
+            - generic [ref=e379]:
+              - generic [ref=e380]: 公司
+              - generic [ref=e381]: 2024-09-22
+            - heading "签约大型客户" [level=3] [ref=e382]
+            - paragraph [ref=e383]: 与国内知名制造企业达成长期合作
+            - generic [ref=e384]:
+              - generic [ref=e385]: 阅读更多
+              - img [ref=e386]
+      - generic [ref=e389]:
+        - generic [ref=e390]:
+          - heading "全过程精确追溯" [level=2] [ref=e391]
+          - paragraph [ref=e392]: 从原料到成品，实现生产全流程的数字化管控
+        - generic [ref=e394]:
+          - generic [ref=e397]:
+            - generic [ref=e398]: "01"
+            - img [ref=e401]
+            - heading "精确追溯体系" [level=3] [ref=e403]
+          - generic [ref=e407]:
+            - generic [ref=e408]: "02"
+            - img [ref=e411]
+            - heading "供应商协同平台" [level=3] [ref=e416]
+          - generic [ref=e420]:
+            - generic [ref=e421]: "03"
+            - img [ref=e424]
+            - heading "仓库出入库追溯" [level=3] [ref=e428]
+          - generic [ref=e431]:
+            - generic [ref=e432]: "04"
+            - img [ref=e435]
+            - heading "车间报工追溯过程" [level=3] [ref=e437]
+          - generic [ref=e441]:
+            - generic [ref=e442]: "05"
+            - img [ref=e445]
+            - heading "设备管理与数采联机" [level=3] [ref=e448]
+          - generic [ref=e452]:
+            - generic [ref=e453]: "06"
+            - img [ref=e456]
+            - heading "看板与追溯报表" [level=3] [ref=e458]
+      - generic [ref=e460]:
+        - generic [ref=e461]:
+          - heading "合作客户" [level=2] [ref=e462]
+          - paragraph [ref=e463]: 我们深知合作才能共赢，和众多知名企业达成深入合作
+        - generic [ref=e464]:
+          - generic [ref=e466]:
+            - img "Tzone logo" [ref=e468]
+            - generic [ref=e469]: Tzone
+          - generic [ref=e471]:
+            - img "bipv logo" [ref=e473]
+            - generic [ref=e474]: bipv
+          - generic [ref=e476]:
+            - img "唯尔得塑业 logo" [ref=e478]
+            - generic [ref=e479]: 唯尔得塑业
+          - generic [ref=e481]:
+            - img "常兴 logo" [ref=e483]
+            - generic [ref=e484]: 常兴
+          - generic [ref=e486]:
+            - img "金洲 logo" [ref=e488]
+            - generic [ref=e489]: 金洲
+          - generic [ref=e491]:
+            - img "长盛德 logo" [ref=e493]
+            - generic [ref=e494]: 长盛德
+          - generic [ref=e496]:
+            - img "DT logo" [ref=e498]
+            - generic [ref=e499]: DT
+          - generic [ref=e501]:
+            - img "银洲纸业 logo" [ref=e503]
+            - generic [ref=e504]: 银洲纸业
+          - generic [ref=e506]:
+            - img "Levi's logo" [ref=e508]
+            - generic [ref=e509]: Levi's
+          - generic [ref=e511]:
+            - img "QIDA logo" [ref=e513]
+            - generic [ref=e514]: QIDA
+          - generic [ref=e516]:
+            - img "用友 logo" [ref=e518]
+            - generic [ref=e519]: 用友
+          - generic [ref=e521]:
+            - img "畅捷通 logo" [ref=e523]
+            - generic [ref=e524]: 畅捷通
+        - generic [ref=e525]:
+          - paragraph [ref=e526]: 已累计为 500+ 家企业客户提供专业的数智化服务
+          - generic [ref=e527]:
+            - generic [ref=e528]:
+              - img [ref=e529]
+              - text: 制造业
+            - generic [ref=e532]:
+              - img [ref=e533]
+              - text: 流通业
+            - generic [ref=e536]:
+              - img [ref=e537]
+              - text: 服务业
+            - generic [ref=e540]:
+              - img [ref=e541]
+              - text: 政府机构
+      - generic [ref=e547]:
+        - heading "开启您的数智化转型之路" [level=2] [ref=e548]
+        - paragraph [ref=e549]: 立即联系我们，获取专属的数智化解决方案，让技术赋能您的企业发展
+        - generic [ref=e550]:
+          - link "立即咨询" [ref=e551] [cursor=pointer]:
+            - /url: /contact
+            - img [ref=e552]
+            - text: 立即咨询
+            - img [ref=e554]
+          - link "预约演示" [ref=e556] [cursor=pointer]:
+            - /url: /demo
+        - generic [ref=e557]:
+          - generic [ref=e558]:
+            - img [ref=e559]
+            - generic [ref=e561]:
+              - generic [ref=e562]: 联系微信
+              - generic [ref=e563]: "13686067077"
+          - generic [ref=e564]:
+            - img [ref=e565]
+            - generic [ref=e570]:
+              - generic [ref=e571]: 项目合作
+              - generic [ref=e572]: "13318438082"
+          - generic [ref=e573]:
+            - img [ref=e574]
+            - generic [ref=e577]:
+              - generic [ref=e578]: 公司地址
+              - generic [ref=e579]: 东莞市莞城区旗峰路200号中天大厦3楼301室
+  - contentinfo [ref=e580]:
+    - generic [ref=e581]:
+      - generic [ref=e582]:
+        - generic [ref=e583]:
+          - generic [ref=e584]:
+            - img "友通科技logo" [ref=e585]
+            - generic [ref=e586]: 友通科技
+          - paragraph [ref=e587]: 东莞市友通计算机科技有限公司
+          - paragraph [ref=e588]: 专注企业数智化管理软件研发与服务的高新技术企业
+        - generic [ref=e589]:
+          - heading "快速链接" [level=3] [ref=e590]
+          - generic [ref=e591]:
+            - link "首页" [ref=e592] [cursor=pointer]:
+              - /url: /
+            - link "产品方案" [ref=e593] [cursor=pointer]:
+              - /url: /products
+            - link "企业介绍" [ref=e594] [cursor=pointer]:
+              - /url: /about
+            - link "服务保障" [ref=e595] [cursor=pointer]:
+              - /url: /services
+            - link "联系我们" [ref=e596] [cursor=pointer]:
+              - /url: /contact
+        - generic [ref=e597]:
+          - heading "联系方式" [level=3] [ref=e598]
+          - generic [ref=e599]:
+            - paragraph [ref=e600]: "联系微信: 13686067077"
+            - paragraph [ref=e601]: "项目合作: 13318438082"
+            - paragraph [ref=e602]: "技术支持: 18998050675"
+      - paragraph [ref=e604]: © 2024 友通科技. 专注企业数智化管理软件研发与服务
+```
